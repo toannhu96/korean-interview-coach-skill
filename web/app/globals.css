@@ -127,6 +127,35 @@ button {
   align-items: center;
 }
 
+.header-repo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #111820;
+  background: #fff;
+  border: 1px solid #c7d0da;
+  border-radius: 6px;
+  box-shadow: 0 1px 0 rgba(17, 24, 32, 0.04);
+  transition:
+    border-color 140ms ease,
+    background 140ms ease,
+    color 140ms ease,
+    box-shadow 140ms ease;
+}
+
+.header-repo-link:hover {
+  border-color: #aeb8c4;
+  background: #fbfcfd;
+}
+
+.header-repo-link:focus-visible {
+  border-color: var(--green);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(5, 184, 52, 0.14);
+}
+
 .language-switcher {
   min-height: 36px;
   border-radius: 6px;
@@ -1601,12 +1630,18 @@ button {
   }
 
   .header-actions {
-    gap: 0;
+    gap: 8px;
   }
 
   .language-switcher {
     min-width: 112px;
     max-width: 38vw;
+  }
+
+  .header-repo-link {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 auto;
   }
 
   .language-trigger {

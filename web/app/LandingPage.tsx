@@ -15,7 +15,7 @@ import {
 
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Locale, dictionary } from "./i18n";
-import hyundaiLogo from "../hyundai.svg";
+
 import { InstallCommand, SkillUsageGuide } from "./InstallCommand";
 import { ScrollReveal } from "./ScrollReveal";
 
@@ -90,6 +90,16 @@ export function LandingPage({ locale }: { locale: Locale }) {
           ))}
         </nav>
         <div className="header-actions">
+          <a
+            className="header-repo-link"
+            href="https://github.com/toannhu96/korean-interview-coach-skill"
+            target="_blank"
+            rel="noreferrer"
+            aria-label={copy.footer.githubLabel}
+            title={copy.footer.githubLabel}
+          >
+            <GitHubIcon />
+          </a>
           <LanguageSwitcher activeLocale={locale} label={copy.header.languageLabel} />
         </div>
       </header>
@@ -175,9 +185,11 @@ export function LandingPage({ locale }: { locale: Locale }) {
                   </ul>
                   <div className="logo-tile">
                     <Image
-                      src={hyundaiLogo}
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hyundai.svg`}
                       alt="Hyundai"
                       className="logo-tile-image"
+                      width={58}
+                      height={30}
                       sizes="76px"
                     />
                   </div>

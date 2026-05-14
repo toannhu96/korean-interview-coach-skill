@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGitHubPagesBuild ? `/${repoName}` : "",
+  },
 };
 
 export default nextConfig;
