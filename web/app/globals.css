@@ -131,29 +131,16 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 20px;
+  height: 20px;
   color: #111820;
-  background: #fff;
-  border: 1px solid #c7d0da;
-  border-radius: 6px;
-  box-shadow: 0 1px 0 rgba(17, 24, 32, 0.04);
-  transition:
-    border-color 140ms ease,
-    background 140ms ease,
-    color 140ms ease,
-    box-shadow 140ms ease;
+  transition: color 140ms ease;
 }
 
-.header-repo-link:hover {
-  border-color: #aeb8c4;
-  background: #fbfcfd;
-}
-
+.header-repo-link:hover,
 .header-repo-link:focus-visible {
-  border-color: var(--green);
+  color: var(--green);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(5, 184, 52, 0.14);
 }
 
 .language-switcher {
@@ -1425,10 +1412,8 @@ button {
 }
 
 .site-footer {
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  background:
-    radial-gradient(circle at 12% 10%, rgba(5, 184, 52, 0.12), transparent 28%),
-    linear-gradient(110deg, #0b1622 0%, #0f1f30 58%, #0a1520 100%);
+  border-top: 1px solid var(--line);
+  background: #ffffff;
 }
 
 .footer-inner {
@@ -1436,7 +1421,7 @@ button {
   grid-template-columns: 1.3fr 1fr;
   display: grid;
   gap: 18px 28px;
-  color: rgba(225, 235, 244, 0.86);
+  color: #506170;
   font-size: 13px;
 }
 
@@ -1449,7 +1434,7 @@ button {
 .footer-brand strong {
   display: block;
   font-size: 16px;
-  color: #ffffff;
+  color: #111820;
 }
 
 .footer-brand p {
@@ -1466,7 +1451,7 @@ button {
 }
 
 .footer-contacts-label {
-  color: #ffffff;
+  color: #111820;
   font-weight: 700;
 }
 
@@ -1474,13 +1459,13 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: rgba(225, 235, 244, 0.9);
+  color: #24415d;
   font-weight: 600;
   text-decoration: none;
 }
 
 .footer-meta a:hover {
-  color: #ffffff;
+  color: var(--green-dark);
 }
 
 .brand-icon {
@@ -1492,7 +1477,7 @@ button {
 .footer-copyright {
   grid-column: 1 / -1;
   margin: 0;
-  color: rgba(217, 225, 232, 0.72);
+  color: #6d7d8b;
 }
 
 .proof span {
@@ -1639,8 +1624,8 @@ button {
   }
 
   .header-repo-link {
-    width: 34px;
-    height: 34px;
+    width: 18px;
+    height: 18px;
     flex: 0 0 auto;
   }
 
