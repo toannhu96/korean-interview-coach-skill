@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - ".github/workflows/deploy-pages.yml"
+      - "pitch-deck/**"
   workflow_dispatch:
 
 permissions:
@@ -29,7 +32,7 @@ jobs:
       - name: Prepare static site artifact
         run: |
           mkdir -p _site
-          cp index.html styles.css script.js _site/
+          cp pitch-deck/index.html pitch-deck/styles.css pitch-deck/script.js _site/
           touch _site/.nojekyll
 
       - name: Upload Pages artifact
