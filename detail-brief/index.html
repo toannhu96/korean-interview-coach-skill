@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Korean Interview Coach | Hackathon Detail Brief</title>
+    <meta
+      name="description"
+      content="English narrative brief for the Korean Interview Coach hackathon submission."
+    />
+    <style>
+      :root {
+        --ink: #071019;
+        --muted: #526070;
+        --line: #dbe2ea;
+        --surface: #f6f8fb;
+        --green: #05b834;
+        --green-dark: #008c29;
+        --blue: #115de2;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fff;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif;
+        letter-spacing: 0;
+      }
+
+      body {
+        font-size: 11.5pt;
+        line-height: 1.5;
+      }
+
+      a {
+        color: var(--blue);
+        font-weight: 750;
+        text-decoration: none;
+      }
+
+      .page {
+        min-height: 297mm;
+        padding: 18mm 18mm 16mm;
+        page-break-after: always;
+      }
+
+      .page:last-child {
+        page-break-after: auto;
+      }
+
+      .cover {
+        display: grid;
+        align-content: space-between;
+      }
+
+      .brand {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: var(--green-dark);
+        font-weight: 900;
+      }
+
+      .mark {
+        display: grid;
+        width: 32px;
+        height: 32px;
+        place-items: center;
+        color: #fff;
+        background: var(--green);
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 950;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 680px;
+        margin: 34mm 0 8mm;
+        font-size: 39pt;
+        line-height: 1.02;
+      }
+
+      h2 {
+        margin-bottom: 7mm;
+        font-size: 24pt;
+        line-height: 1.08;
+      }
+
+      h3 {
+        margin-bottom: 2mm;
+        font-size: 13pt;
+      }
+
+      p {
+        color: var(--muted);
+      }
+
+      .tagline {
+        max-width: 560px;
+        color: var(--ink);
+        font-size: 16pt;
+        font-weight: 760;
+      }
+
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6mm;
+        margin-top: 16mm;
+      }
+
+      .card,
+      .section,
+      .proof {
+        padding: 6mm;
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+      }
+
+      .card strong,
+      .proof strong {
+        display: block;
+        margin-bottom: 1mm;
+        color: var(--ink);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 5mm;
+      }
+
+      .three {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .section {
+        margin-bottom: 5mm;
+      }
+
+      .section p,
+      .proof p,
+      li {
+        margin-bottom: 0;
+      }
+
+      ul {
+        display: grid;
+        gap: 2mm;
+        padding-left: 5mm;
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .flow {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 4mm;
+        margin-top: 4mm;
+      }
+
+      .flow div {
+        padding: 4mm;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+      }
+
+      .flow span,
+      .eyebrow {
+        display: block;
+        margin-bottom: 2mm;
+        color: var(--green-dark);
+        font-size: 9pt;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .links {
+        display: grid;
+        gap: 2mm;
+      }
+
+      .footer-note {
+        margin-top: 8mm;
+        padding-top: 5mm;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 10pt;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        body {
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="page cover">
+        <div>
+          <div class="brand"><span class="mark">K</span>Korean Interview Coach</div>
+          <h1>The AI interview coach for Korean-company hiring.</h1>
+          <p class="tagline">
+            Clear English. Stronger evidence. Culture-aware confidence for
+            Vietnamese and foreign candidates applying to Korean companies.
+          </p>
+          <div class="meta">
+            <div class="card">
+              <strong>Team</strong>
+              Korean Interview Coach Team
+            </div>
+            <div class="card">
+              <strong>Member</strong>
+              Toan Nhu
+            </div>
+            <div class="card">
+              <strong>Submission</strong>
+              IDEATHON 2026
+            </div>
+          </div>
+        </div>
+        <div class="links">
+          <a href="https://github.com/toannhu96/korean-interview-coach-skill"
+            >github.com/toannhu96/korean-interview-coach-skill</a
+          >
+          <a href="https://korean-interview-coach-skill.vercel.app/"
+            >korean-interview-coach-skill.vercel.app</a
+          >
+        </div>
+      </section>
+
+      <section class="page">
+        <span class="eyebrow">Problem and insight</span>
+        <h2>Good candidates fail for invisible reasons.</h2>
+        <div class="grid">
+          <article class="section">
+            <h3>Problem</h3>
+            <p>
+              Many Vietnamese and foreign candidates prepare vocabulary and
+              common answers, but Korean-company interviews also judge trust,
+              evidence, reliability, teamwork, respectful ownership, and fit.
+              The candidate may have the right experience but still sound vague,
+              passive, too broad, or hard to follow in English.
+            </p>
+          </article>
+          <article class="section">
+            <h3>Who is affected</h3>
+            <p>
+              The first users are candidates applying to Korean companies or
+              Korea-facing teams, especially when the interview language is
+              English and the candidate needs quick, practical coaching before a
+              real interview.
+            </p>
+          </article>
+          <article class="section">
+            <h3>Why current prep is weak</h3>
+            <ul>
+              <li>Generic interview lists do not know the target company or role.</li>
+              <li>Language tools improve grammar but not interview trust.</li>
+              <li>Company research often stays as facts, not answer strategy.</li>
+            </ul>
+          </article>
+          <article class="section">
+            <h3>Core insight</h3>
+            <p>
+              The gap is not simply English fluency. The gap is converting real
+              experience into signals that a Korean-company interviewer can
+              trust: clear ownership, teamwork, reliability, preparation, and
+              role-specific evidence.
+            </p>
+          </article>
+        </div>
+        <p class="footer-note">
+          The product does not coach candidates to perform Korean identity. It
+          helps them communicate professional evidence clearly and respectfully.
+        </p>
+      </section>
+
+      <section class="page">
+        <span class="eyebrow">Solution and AI workflow</span>
+        <h2>One portable Agent Skill. Four practical coaching steps.</h2>
+        <div class="section">
+          <h3>Solution</h3>
+          <p>
+            Korean Interview Coach is an installable Agent Skill that guides a
+            candidate from profile setup to company preparation, English mock
+            practice, answer feedback, and the next drill. It explains coaching
+            in Vietnamese by default, runs interview practice in English, and
+            uses Korean-market context only where it improves interview
+            readiness.
+          </p>
+        </div>
+        <div class="flow">
+          <div>
+            <span>01 Input</span>
+            Role, target company, interview stage, timeline, English concern,
+            and candidate storybank.
+          </div>
+          <div>
+            <span>02 Prepare</span>
+            Company research, Korean-market guide, question bank, and answer
+            patterns become interview strategy.
+          </div>
+          <div>
+            <span>03 Practice</span>
+            The candidate answers one English interview question at a time under
+            realistic constraints.
+          </div>
+          <div>
+            <span>04 Output</span>
+            Scorecard, rewrite, coaching diagnosis, and the next focused drill.
+          </div>
+        </div>
+        <div class="grid" style="margin-top: 6mm">
+          <article class="proof">
+            <strong>AI source of truth</strong>
+            <p>
+              Skill instructions, company research guide, Korean-market guide,
+              answer patterns, question bank, rubric, and coaching-state schema.
+            </p>
+          </article>
+          <article class="proof">
+            <strong>Evaluation rubric</strong>
+            <p>
+              Answers are reviewed across clarity, structure, evidence, role fit,
+              Korean-company fit, and confidence balance.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="page">
+        <span class="eyebrow">User experience, why this wins, and MVP evidence</span>
+        <h2>Simple enough to use before a real interview.</h2>
+        <div class="grid">
+          <article class="section">
+            <h3>User flow</h3>
+            <ul>
+              <li>Start with kickoff: role, company, stage, timeline, and concerns.</li>
+              <li>Generate a company-prep brief with risks, stories, and questions.</li>
+              <li>Practice one English answer, not a long generic interview session.</li>
+              <li>Receive a scorecard, rewrite, and next drill.</li>
+            </ul>
+          </article>
+          <article class="section">
+            <h3>Why this wins</h3>
+            <ul>
+              <li>Narrow wedge: Korean-company interview readiness, not generic career coaching.</li>
+              <li>Language-realistic: Vietnamese explanation, English performance.</li>
+              <li>Workflow, not prompt: repeatable state, references, rubric, and next action.</li>
+              <li>Culture-aware without stereotypes: practical trust signals only.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="grid three">
+          <article class="proof">
+            <strong>MVP evidence: installable skill</strong>
+            Kickoff, company prep, practice, feedback, and storybank support.
+          </article>
+          <article class="proof">
+            <strong>Live web page</strong>
+            English, Vietnamese, and Korean landing content for installation and use.
+          </article>
+          <article class="proof">
+            <strong>Submission deck</strong>
+            English 9-slide PDF aligned to the hackathon structure.
+          </article>
+        </div>
+        <p class="footer-note">
+          Expected impact: candidates spend less time memorizing generic answers
+          and more time practicing clear, trustworthy evidence for the role they
+          actually want.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
