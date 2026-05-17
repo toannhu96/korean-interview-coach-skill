@@ -2,9 +2,16 @@
 
 const fs = require("node:fs");
 const path = require("node:path");
+const { spawnSync } = require("node:child_process");
 const { pathToFileURL } = require("node:url");
 
-const { chromium } = require("playwright");
+let chromium = null;
+
+try {
+  ({ chromium } = require("playwright"));
+} catch {
+  chromium = null;
+}
 
 const root = path.resolve(__dirname, "..");
 const submissionDir = path.join(root, "submission");
@@ -26,8 +33,39 @@ async function printPdf(page, source, output) {
   });
 }
 
+function printPdfWithChrome(source, output) {
+  if (!fs.existsSync(systemChrome)) {
+    throw new Error(
+      "Playwright is not installed and Google Chrome was not found for PDF export.",
+    );
+  }
+
+  const result = spawnSync(
+    systemChrome,
+    [
+      "--headless=new",
+      "--disable-gpu",
+      `--print-to-pdf=${output}`,
+      pathToFileURL(source).href,
+    ],
+    { stdio: "inherit" },
+  );
+
+  if (result.status !== 0) {
+    throw new Error(`Chrome PDF export failed for ${path.relative(root, source)}`);
+  }
+}
+
 async function main() {
   fs.mkdirSync(submissionDir, { recursive: true });
+
+  if (!chromium) {
+    printPdfWithChrome(deckSource, deckPdf);
+    printPdfWithChrome(briefSource, briefPdf);
+    console.log(`Wrote ${path.relative(root, deckPdf)}`);
+    console.log(`Wrote ${path.relative(root, briefPdf)}`);
+    return;
+  }
 
   const launchOptions = fs.existsSync(systemChrome)
     ? { executablePath: systemChrome }

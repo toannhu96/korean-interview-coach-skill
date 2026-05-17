@@ -15,7 +15,7 @@ function shouldUseMarkdown(acceptHeader: string): boolean {
   return false;
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathInfo = isHomepagePath(request.nextUrl.pathname);
   if (!pathInfo.isHome) {
     return NextResponse.next();
@@ -34,7 +34,7 @@ export function middleware(request: NextRequest) {
       headers: {
         "Content-Type": "text/markdown; charset=utf-8",
         "x-markdown-tokens": tokenCount.toString(),
-        "Vary": "Accept",
+        Vary: "Accept",
         Link: markdownHeaders,
       },
     });
@@ -49,4 +49,3 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: ["/", "/en", "/en/", "/vi", "/vi/", "/ko", "/ko/"],
 };
-

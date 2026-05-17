@@ -861,7 +861,7 @@ meter::-webkit-meter-optimum-value {
   transition: width 220ms ease;
 }
 
-@media (max-width: 980px) {
+@media screen and (max-width: 980px) {
   body {
     overflow: auto;
   }
@@ -926,7 +926,7 @@ meter::-webkit-meter-optimum-value {
   }
 }
 
-@media (max-width: 620px) {
+@media screen and (max-width: 620px) {
   h1 {
     font-size: 40px;
   }
@@ -985,7 +985,7 @@ meter::-webkit-meter-optimum-value {
     width: 100%;
     height: 9in;
     min-height: 9in;
-    padding: 0.42in 0.68in;
+    padding: 0.28in 0.48in;
     overflow: hidden;
     page-break-after: always;
     opacity: 1 !important;
@@ -998,30 +998,34 @@ meter::-webkit-meter-optimum-value {
   }
 
   h1 {
+    margin-bottom: 14px;
     font-size: 50px;
+    line-height: 1.02;
   }
 
   h2 {
     margin-bottom: 16px;
-    font-size: 42px;
+    font-size: 44px;
+    line-height: 1.05;
   }
 
   h3 {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
     font-size: 20px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.34;
   }
 
   small {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .section-kicker {
-    margin-bottom: 12px;
-    font-size: 12px;
+    margin-bottom: 14px;
+    font-size: 13px;
   }
 
   .slide-grid,
@@ -1029,7 +1033,22 @@ meter::-webkit-meter-optimum-value {
   .solution-layout,
   .feedback-layout,
   .build-layout {
-    gap: 44px;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 0.84fr) minmax(0, 0.96fr);
+    gap: 28px;
+  }
+
+  .two-column {
+    grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  }
+
+  .solution-layout,
+  .build-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   }
 
   .coach-card,
@@ -1043,7 +1062,7 @@ meter::-webkit-meter-optimum-value {
   .ask-grid article,
   .brief-card,
   .practice-card {
-    padding: 18px;
+    padding: 14px;
   }
 
   .problem-stack article,
@@ -1052,42 +1071,60 @@ meter::-webkit-meter-optimum-value {
   .wins-grid article,
   .signal-grid article,
   .timeline article {
-    min-height: 118px;
+    min-height: 92px;
+  }
+
+  .problem-stack,
+  .solution-panel,
+  .build-list {
+    gap: 10px;
   }
 
   .signal-grid,
   .wins-grid,
   .timeline {
-    margin-top: 22px;
+    margin-top: 18px;
+    width: 100%;
+    gap: 10px;
   }
 
   .timeline article,
   .ai-flow article {
-    min-height: 172px;
+    min-height: 150px;
   }
 
   .demo-note,
   .repo-strip {
-    padding: 14px 18px;
+    padding: 12px 16px;
     font-size: 14px;
+    line-height: 1.35;
   }
 
   .hero-actions {
-    margin-top: 18px;
+    gap: 8px;
+    margin-top: 14px;
   }
 
   .link-list {
-    margin-top: 18px;
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .link-list a {
+    padding: 8px 10px;
+    font-size: 13px;
   }
 
   .evidence-callout {
-    margin-top: 14px;
-    padding: 12px 14px;
-    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.32;
   }
 
   .slide-lead {
     font-size: 17px;
+    line-height: 1.35;
   }
 
   .mini-proof-grid {
@@ -1095,8 +1132,8 @@ meter::-webkit-meter-optimum-value {
   }
 
   .mini-proof-grid span {
-    padding: 8px 10px;
-    font-size: 12px;
+    padding: 7px 9px;
+    font-size: 13px;
   }
 
   .insight-note,
@@ -1111,57 +1148,175 @@ meter::-webkit-meter-optimum-value {
   }
 
   .window-top {
-    min-height: 42px;
+    min-height: 34px;
+    padding: 0 14px;
+  }
+
+  .window-top span {
+    width: 8px;
+    height: 8px;
+  }
+
+  .window-top strong {
+    font-size: 13px;
+  }
+
+  .brand-lockup {
+    gap: 9px;
+    font-size: 22px;
+  }
+
+  .brand-mark {
+    width: 28px;
+    height: 28px;
+  }
+
+  .brand-mark::before {
+    font-size: 18px;
+  }
+
+  .hero-actions span,
+  .score-pill,
+  .progress-row span,
+  .hero-flow span {
+    min-height: 32px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .coach-card {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .coach-card h2,
+  .screen-main h2,
+  .brief-card h3,
+  .practice-card h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+
+  .coach-card p,
+  .brief-card p,
+  .practice-card p,
+  .chat-preview p {
+    font-size: 14px;
   }
 
   .hero-flow,
   .progress-row {
-    padding: 16px 20px;
+    gap: 8px;
+    padding: 12px 16px;
   }
 
   .chat-preview {
-    gap: 10px;
-    padding: 0 20px 20px;
+    gap: 8px;
+    padding: 0 16px 16px;
   }
 
   .chat-preview p {
-    padding: 12px;
+    padding: 10px;
+  }
+
+  .signal-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .signal-grid article {
+    padding: 14px 12px;
+  }
+
+  .signal-grid h3,
+  .wins-grid h3,
+  .timeline h3 {
+    font-size: 20px;
+    line-height: 1.15;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 10px;
+  }
+
+  .problem-stack p,
+  .signal-grid p,
+  .wins-grid p,
+  .timeline p,
+  .build-list span,
+  .solution-panel span {
+    font-size: 17px;
+    line-height: 1.32;
   }
 
   .product-screen {
-    min-height: 5.8in;
+    grid-template-columns: 150px minmax(0, 1fr);
+    min-height: 5.7in;
   }
 
   .screen-sidebar {
-    padding: 22px 18px;
+    padding: 18px 14px;
+  }
+
+  .screen-sidebar nav {
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  .screen-sidebar nav span {
+    padding: 9px 10px;
+    font-size: 13px;
   }
 
   .screen-main {
-    gap: 16px;
-    padding: 22px;
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .screen-grid {
+    gap: 12px;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   }
 
   .brief-card ul {
-    gap: 10px;
-    margin-top: 16px;
+    gap: 7px;
+    margin-top: 12px;
   }
 
   .brief-card li {
-    padding: 10px 0 10px 14px;
-    font-size: 15px;
+    padding: 8px 0 8px 10px;
+    font-size: 14px;
+    line-height: 1.32;
   }
 
   .practice-card button {
-    min-height: 42px;
-    margin-top: 18px;
+    min-height: 34px;
+    margin-top: 12px;
+    font-size: 14px;
   }
 
   .answer-compare {
     margin-top: 18px;
   }
 
+  .answer-compare p {
+    font-size: 20px;
+  }
+
+  .answer-compare small {
+    font-size: 15px;
+  }
+
   .repo-strip {
     margin-top: 18px;
+  }
+
+  .repo-strip code {
+    padding: 7px 9px;
+    font-size: 13px;
   }
 
   .ask-grid {
@@ -1179,6 +1334,26 @@ meter::-webkit-meter-optimum-value {
   .closing-line {
     margin-top: 22px;
     font-size: 22px;
+  }
+
+  .closing {
+    width: 100%;
+  }
+
+  .closing .brand-lockup {
+    margin-bottom: 18px;
+  }
+
+  .ask-grid article {
+    padding: 16px;
+  }
+
+  .ask-grid strong {
+    font-size: 26px;
+  }
+
+  .ask-grid span {
+    font-size: 14px;
   }
 
   .deck-controls,
