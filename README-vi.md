@@ -43,7 +43,7 @@ Mặc định:
 Cài trực tiếp từ thư mục `skill/`:
 
 ```bash
-npx skills add https://gitlab.com/toannhu96/korean-interview-coach-skill/-/tree/main/skill
+npx skills add https://github.com/toannhu96/korean-interview-coach-skill/tree/main/skill
 ```
 
 Hoặc copy `skill/` vào thư mục skills local:

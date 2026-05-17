@@ -53,7 +53,7 @@ Defaults:
 Install from the `skill/` folder:
 
 ```bash
-npx skills add https://gitlab.com/toannhu96/korean-interview-coach-skill/-/tree/main/skill
+npx skills add https://github.com/toannhu96/korean-interview-coach-skill/tree/main/skill
 ```
 
 Or copy `skill/` into a local skills directory such as:

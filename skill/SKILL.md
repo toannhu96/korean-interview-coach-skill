@@ -33,7 +33,7 @@ Load reference files only when needed:
 Install this skill from the real GitLab skill folder:
 
 ```bash
-npx skills add https://gitlab.com/toannhu96/korean-interview-coach-skill/-/tree/main/skill
+npx skills add https://github.com/toannhu96/korean-interview-coach-skill/tree/main/skill
 ```
 
 Then invoke it in a Skills-compatible agent:

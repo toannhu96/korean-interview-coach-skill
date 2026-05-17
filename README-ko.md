@@ -43,7 +43,7 @@ kickoff -> company-prep -> practice -> feedback
 `skill/` 폴더에서 직접 설치합니다.
 
 ```bash
-npx skills add https://gitlab.com/toannhu96/korean-interview-coach-skill/-/tree/main/skill
+npx skills add https://github.com/toannhu96/korean-interview-coach-skill/tree/main/skill
 ```
 
 또는 `skill/` 폴더를 로컬 skills 디렉터리에 복사합니다.

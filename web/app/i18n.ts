@@ -262,7 +262,7 @@ export const dictionary: Record<Locale, LandingCopy> = {
       ],
       commandLabel: "설치 명령",
       command:
-        "npx skills add https://gitlab.com/toannhu96/korean-interview-coach-skill/-/tree/main/skill",
+        "npx skills add https://github.com/toannhu96/korean-interview-coach-skill/tree/main/skill",
       copyLabel: "복사",
       copiedLabel: "복사됨",
       footnote: "터미널에서 붙여넣고 실행해 바로 스킬을 등록하세요.",
@@ -492,7 +492,7 @@ export const dictionary: Record<Locale, LandingCopy> = {
       badges: ["Claude", "Codex", "Cursor", "OpenClaw", "Hermes", "More"],
       commandLabel: "Install command",
       command:
-        "npx skills add https://gitlab.com/toannhu96/korean-interview-coach-skill/-/tree/main/skill",
+        "npx skills add https://github.com/toannhu96/korean-interview-coach-skill/tree/main/skill",
       copyLabel: "Copy",
       copiedLabel: "Copied",
       footnote: "Run this in terminal to register the skill immediately.",
@@ -735,7 +735,7 @@ export const dictionary: Record<Locale, LandingCopy> = {
       ],
       commandLabel: "Lệnh cài",
       command:
-        "npx skills add https://gitlab.com/toannhu96/korean-interview-coach-skill/-/tree/main/skill",
+        "npx skills add https://github.com/toannhu96/korean-interview-coach-skill/tree/main/skill",
       copyLabel: "Sao chép",
       copiedLabel: "Đã sao chép",
       footnote: "Chạy lệnh trong terminal để đăng ký skill ngay.",
