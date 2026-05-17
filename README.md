@@ -1,8 +1,12 @@
 # Korean Interview Coach
 
-This repository contains the portable `korean-interview-coach` Agent Skill, a small landing site for installation guidance, supporting docs, and a separate pitch-deck prototype.
+`korean-interview-coach` is an AI skill built for Vietnamese candidates and other foreign workers preparing for interviews with Korean companies.
 
-The skill is built for Vietnamese candidates and other foreign workers preparing for interviews with Korean companies.
+🌐 **Website:** [Korean Interview Coach](https://korean-interview-coach-skill.vercel.app/)
+
+📺 **Demo Video:**
+
+[![Korean Interview Coach Demo](web/public/video-thumbnail.png)](https://www.youtube.com/watch?v=25POtnE5rvQ)
 
 Languages: [English](README.md) | [Tiếng Việt](README-vi.md) | [한국어](README-ko.md)
 
@@ -14,25 +18,10 @@ korean-interview-coach-skill/
 │   ├── SKILL.md            # main skill instructions
 │   ├── agents/openai.yaml  # agent metadata
 │   ├── references/         # research, rubric, question bank, answer patterns
-│   └── LICENSE
-├── web/                    # Next.js landing site for install/overview content
-│   ├── app/
-│   ├── DESIGN.md
-│   ├── SKILL.md
-│   └── package.json
-├── docs/                   # implementation plans for landing/usage docs
-├── pitch-deck/             # standalone HTML/CSS/JS deck prototype
 ├── README.md
 ├── README-vi.md
 └── README-ko.md
 ```
-
-## Main Parts
-
-- `skill/`: the installable skill package. This is the folder to copy or install into a Skills-compatible agent runtime.
-- `web/`: a local Next.js app used to present the skill, installation flow, and multilingual landing content.
-- `docs/`: plan documents for repo work.
-- `pitch-deck/`: presentation prototype kept separately from the main skill and web app.
 
 ## Skill Flow
 
@@ -63,21 +52,8 @@ Or copy `skill/` into a local skills directory such as:
 .agents/skills/korean-interview-coach
 ```
 
-## Run The Landing Site
-
-```bash
-cd web
-npm install
-npm run dev
-```
-
-Other available scripts:
-
-- `npm run build`
-- `npm run start`
-
 ## Example Prompt
 
 ```text
-Use $korean-interview-coach to help me prepare for a Samsung interview.
+$korean-interview-coach /kickoff I want to prepare for a Samsung Software Engineer interview
 ```

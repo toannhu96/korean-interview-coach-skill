@@ -1,8 +1,12 @@
 # Korean Interview Coach
 
-Repo này chứa Agent Skill `korean-interview-coach`, một landing site nhỏ để hướng dẫn cài đặt, một số tài liệu hỗ trợ, và một prototype pitch deck riêng.
+`korean-interview-coach` là một AI skill được xây dựng dành cho ứng viên Việt Nam và các lao động nước ngoài khác đang chuẩn bị phỏng vấn với các công ty Hàn Quốc.
 
-Skill này dành cho ứng viên Việt Nam và lao động nước ngoài chuẩn bị phỏng vấn với công ty Hàn.
+🌐 **Website:** [Korean Interview Coach](https://korean-interview-coach-skill.vercel.app/)
+
+📺 **Video Demo:**
+
+[![Korean Interview Coach Demo](web/public/video-thumbnail.png)](https://www.youtube.com/watch?v=25POtnE5rvQ)
 
 Ngôn ngữ: [English](README.md) | [Tiếng Việt](README-vi.md) | [한국어](README-ko.md)
 
@@ -10,23 +14,18 @@ Ngôn ngữ: [English](README.md) | [Tiếng Việt](README-vi.md) | [한국어]
 
 ```text
 korean-interview-coach-skill/
-├── skill/       # gói Agent Skill để cài
-├── web/         # site Next.js giới thiệu và hướng dẫn cài đặt
-├── docs/        # tài liệu kế hoạch
-├── pitch-deck/  # prototype deck HTML/CSS/JS
+├── skill/                  # gói Agent Skill
+│   ├── SKILL.md            # hướng dẫn chính của skill
+│   ├── agents/openai.yaml  # metadata của agent
+│   ├── references/         # tài liệu nghiên cứu, tiêu chí đánh giá, bộ câu hỏi, mẫu câu trả lời
 ├── README.md
 ├── README-vi.md
 └── README-ko.md
 ```
 
-## Phần Chính
-
-- `skill/`: thư mục skill chính để cài vào agent hỗ trợ Skills.
-- `web/`: app Next.js local cho landing page và nội dung hướng dẫn.
-- `docs/`: các file plan trong repo.
-- `pitch-deck/`: deck prototype tách riêng khỏi skill và web app.
-
 ## Flow Của Skill
+
+Vòng lặp coaching cốt lõi là:
 
 ```text
 kickoff -> company-prep -> practice -> feedback
@@ -34,40 +33,27 @@ kickoff -> company-prep -> practice -> feedback
 
 Mặc định:
 
-- Tiếng Việt cho giải thích và coaching
-- Tiếng Anh cho câu hỏi và câu trả lời phỏng vấn
-- Tiếng Hàn chỉ dùng khi cần cho etiquette và bối cảnh công ty Hàn
+- Tiếng Việt dùng để giải thích và coaching
+- Tiếng Anh dùng cho các câu hỏi và câu trả lời phỏng vấn
+- Tiếng Hàn chỉ dùng cho các nghi thức hữu ích và bối cảnh công sở
 
 ## Cài Đặt Skill
 
-Cài trực tiếp từ thư mục `skill/`:
+Cài đặt từ thư mục `skill/`:
 
 ```bash
 npx skills add https://github.com/toannhu96/korean-interview-coach-skill/tree/main/skill
 ```
 
-Hoặc copy `skill/` vào thư mục skills local:
+Hoặc copy `skill/` vào thư mục skills local, ví dụ như:
 
 ```text
 ~/.codex/skills/korean-interview-coach
 .agents/skills/korean-interview-coach
 ```
 
-## Chạy Landing Site
-
-```bash
-cd web
-npm install
-npm run dev
-```
-
-Script khác:
-
-- `npm run build`
-- `npm run start`
-
 ## Ví Dụ Prompt
 
 ```text
-Use $korean-interview-coach to help me prepare for a Samsung interview.
+$korean-interview-coach /kickoff I want to prepare for a Samsung Software Engineer interview
 ```

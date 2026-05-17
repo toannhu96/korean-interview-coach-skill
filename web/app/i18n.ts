@@ -346,11 +346,11 @@ export const dictionary: Record<Locale, LandingCopy> = {
       line1:
         "Korean Interview Coach는 Agent Skill 표준에 맞춰 설계된 한국 기업 인터뷰 준비 스킬입니다.",
       contactsLabel: "연락처",
-      emailLabel: "이메일",
-      linkedinLabel: "링크드인",
-      githubLabel: "깃허브",
+      emailLabel: "Email",
+      linkedinLabel: "LinkedIn",
+      githubLabel: "GitHub",
       copyright:
-        "© 2026 Korean Interview Coach Skill. All rights are reserved.",
+        "© 2026 Korean Interview Coach Skill. 모든 권리를 보유합니다.",
     },
     closing: {
       title: "지금, 합격을 위한 진짜 준비를 시작하세요.",
@@ -590,7 +590,7 @@ export const dictionary: Record<Locale, LandingCopy> = {
       linkedinLabel: "LinkedIn",
       githubLabel: "GitHub",
       copyright:
-        "© 2026 Korean Interview Coach Skill. All rights are reserved.",
+        "© 2026 Korean Interview Coach Skill. All rights reserved.",
     },
     closing: {
       title: "Start preparing for the interview that matters.",
@@ -826,7 +826,7 @@ export const dictionary: Record<Locale, LandingCopy> = {
       linkedinLabel: "LinkedIn",
       githubLabel: "GitHub",
       copyright:
-        "© 2026 Korean Interview Coach Skill. All rights are reserved.",
+        "© 2026 Korean Interview Coach Skill. Bảo lưu mọi quyền.",
     },
     closing: {
       title: "Bắt đầu chuẩn bị cho buổi phỏng vấn quan trọng.",

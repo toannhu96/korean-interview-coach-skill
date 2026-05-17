@@ -131,10 +131,15 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   color: #111820;
   transition: color 140ms ease;
+}
+
+.header-repo-link .brand-icon {
+  width: 22px;
+  height: 22px;
 }
 
 .header-repo-link:hover,
@@ -192,6 +197,14 @@ button {
   line-height: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.language-trigger span,
+.language-menu button span {
+  font-size: 19px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
 }
 
 .language-chevron {
@@ -1438,7 +1451,7 @@ button {
 }
 
 .footer-brand p {
-  max-width: 420px;
+  max-width: 340px;
   margin: 6px 0 0;
   line-height: 1.55;
 }
@@ -1447,7 +1460,7 @@ button {
   display: grid;
   justify-items: start;
   align-content: start;
-  gap: 8px;
+  gap: 14px;
 }
 
 .footer-contacts-label {
@@ -1460,7 +1473,7 @@ button {
   align-items: center;
   gap: 8px;
   color: #24415d;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -1624,9 +1637,14 @@ button {
   }
 
   .header-repo-link {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 auto;
+  }
+
+  .header-repo-link .brand-icon {
     width: 18px;
     height: 18px;
-    flex: 0 0 auto;
   }
 
   .language-trigger {
